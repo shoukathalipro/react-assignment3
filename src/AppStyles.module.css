@@ -1,0 +1,69 @@
+.title {
+  text-align: center;
+}
+
+.formBox {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.displayBox {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: darkgrey;
+  border: solid 2px black;
+}
+
+.feedbackCard {
+  background-color: pink;
+  padding: 1vw;
+  border-radius: 20px;
+  border: solid 2px black;
+  margin: 2vh;
+}
+
+.inputField {
+  margin-left: 1vh;
+  border: solid 2px black;
+  border-radius: 30px;
+  padding: 1vh;
+  margin-bottom: 3vh;
+  background-color: darkgrey;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.inputLabel {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.submitBtn {
+  background-color: cyan;
+  border-radius: 30px;
+  border: solid 2px black;
+  padding: 3vh 10vh 3vh;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.submitBtn:active {
+  background-color: yellowgreen;
+}
+
+.btnContainer {
+  text-align: center;
+  margin-top: 2vw;
+}
