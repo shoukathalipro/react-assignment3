@@ -51,6 +51,7 @@ console.log(this.state.items);
 let feedBackForm;
 let goBackBtn;
 let displayFeedBack;
+let dynamicHeaderText;
 
 if(!this.state.isFormSubmitted) {
         feedBackForm = <form>
@@ -67,6 +68,7 @@ if(!this.state.isFormSubmitted) {
                         </form>;
         goBackBtn  =  null;
         displayFeedBack  =  null;
+        dynamicHeaderText = "FORM";
     
 }
 else {
@@ -79,12 +81,13 @@ else {
                                 )
                             })  
                             }
-                        </div>
+                        </div>;
+    dynamicHeaderText = "DATA";
 }
 
     return(
       <div>
-            <Header/>
+            <Header name={  dynamicHeaderText  }/>
 
             <div className={styles.formBox}>
                 {  feedBackForm  }
